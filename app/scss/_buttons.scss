@@ -1,0 +1,18 @@
+.button {
+	padding: 16px 24px;
+	max-width: 100%;
+	font-family: $font;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 5px;
+	background: var(--primary-color);
+	transition: all 0.5s ease;
+	cursor: pointer;
+	&:hover {
+		background: var(--accent-color);
+	}
+	&_wide {
+		min-width: 260px;
+	}
+}

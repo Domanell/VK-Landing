@@ -1,0 +1,10 @@
+$transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+$main_color: #fff;
+$second_color: #000;
+$font: 'Gilroy', 'Roboto', sans-serif;
+
+@mixin mq($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}

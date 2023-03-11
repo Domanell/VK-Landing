@@ -1,18 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/dest/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="img/dest/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/dest/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="img/dest/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="img/dest/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>English! Do You Speak It?!</title>
+		<link rel="stylesheet" href="css/app.min.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<!-- Подключаем стили проекта -->
-	<link rel="stylesheet" href="css/app.min.css">
-</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__inner">
+					<div class="col-auto">
+						<a class="logo" href="/">
+							<img src="img/dest/logo.png" alt="Logo" class="logo__img" />
+						</a>
+					</div>
+					<div class="col">
+						<nav class="navbar">
+							<ul class="navbar__list">
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Про мене</a>
+								</li>
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Чому саме я</a>
+								</li>
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Відгуки</a>
+								</li>
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Кейси</a>
+								</li>
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Курси</a>
+								</li>
+								<li class="navbar__list-item">
+									<a href="#" class="navbar__link">Як записатися</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="burger-icon">
+							<span class="line line__top"></span>
+							<span class="line line__bottom"></span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="hero">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-md-6 order-md-1">
+								<img src="img/dest/hero-img.jpg" alt="about-me-profile" class="hero__img" />
+							</div>
+							<div class="col-md-6">
+								<div class="hero__text">
+									<p>Привіт! Моє ім’я Вероніка.</p>
+									<h1>Я допомагаю дорослим учням подолати страхи і невпевненість та заговорити англійською та іспанською мовами.</h1>
+								</div>
+								<button class="button button_wide">Хочу на курс</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Problems -->
+				<section class="section section--bg-1">
+					<div class="container">
+						<h2 class="section__title">Вам знайомі такі проблеми?</h2>
+						<div class="problems">
+							<div class="row">
+								<div class="problems__item">
+									<p>
+										<span>Довго вчу,</span><br />
+										багато що розумію, але сказати нічого не можу
+									</p>
+								</div>
+								<div class="problems__item">
+									<p>
+										<span>Боюся робити помилки;</span><br />
+										страшно, що мене не зрозуміють
+									</p>
+								</div>
+								<div class="problems__item">
+									<p>
+										<span>Не знаю,</span><br />
+										як запам'ятовувати нові слова
+									</p>
+								</div>
+								<div class="problems__item">
+									<p>
+										<span>Хочеться вивчити мову,</span><br />
+										але в моєму в14іці уже так складно
+									</p>
+								</div>
+								<div class="problems__item">
+									<p>
+										<span>Я ніколи не зрозумію граматику,</span><br />
+										вона дуже важка
+									</p>
+								</div>
+							</div>
+							<h3>З такими ж стикалася і я, а тому знаю, як їх успішно подолати</h3>
+						</div>
+					</div>
+				</section>
+				<!-- Video -->
+				<!-- About me? -->
+				<section class="section section__video">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-md-5 order-md-1">
+								<!-- <h2 class="section__title">Enjoy Our<br /><mark>Companionship</mark></h2> -->
+								<h2 class="section__title">Познайомимось?</h2>
+								<big><strong>Я викладачка іспанської та англійської мов з міжнародною кваліфікацією та 14-річним досвідом викладання. </strong></big>
+							</div>
+							<div class="col-md-7">
+								<div class="video">
+									<a class="video__button">
+										<img src="img/dest/hero-img.jpg" alt="About Me" class="video__thumbnail" />
+										<img src="img/dest/youtube-play-icon.png" class="video__play-icon" />
+									</a>
+									<div class="video__player">
+										<video controls src="video/video_low.mp4"></video>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br />
+						<br />
+						<p>
+							Моя історія почалася з Полтавського національного педагогічного університету імені В.Г. Короленка, де я здобула вищу освіту, вивчала англійську,
+							іспанську, німецьку мови та методику викладання. Але тоді, ще 16-річною дівчиною я не знала, що англійська стане мені такою ж рідною , як і
+							українська, а іспанська мова та культура згодом заполонять моє серце назавжди.
+						</p>
 
-<body>
+						<p>
+							Після університету було пройдено безліч курсів, тренінгів та вебінарів від Кембриджського університету та Інституту Сервантеса. Досвід навчання в
+							Іспанії та проживання в США допомогли пройти та зрозуміти усі труднощі, з якими стикаються учні при вивченні мови та її вільному використанні в
+							живому спілкуванні.
+						</p>
+						<p>
+							Працювала у двох приватних мовних школах та маю більше тисячі задоволених учнів, що змогли повірити у себе та заговорити іноземною мовою. Моєму
+							наймолодшому учневі було п’ять років, а найстаршому за шістдесят. Я навчила ціле покоління з першого класу школи до одинадцятого, від початкового
+							рівня А1 до вільного впевненого володіння С1 і спостерігала за їх неймовірним зростанням. Мої учні успішно складають міжнародні Кембриджські
+							екзамени (PET, FCE, CAE) та іспанський екзамен DELE,що дає їм змогу навчатися та працювати закордоном, отримувати підвищення по роботі, та
+							впевнено почуватися під час подорожей.
+						</p>
+						<p>
+							А ще наші уроки дуже нагадують дружні посиденьки або психотерапевтичну сесію, після яких учні починають вірити у себе, покращується настрій та
+							приходить натхнення.
+						</p>
+						<p>
+							Якщо Ви хочете з перших уроків зануритись у мовну практику і вже з перших хвилин занять почати невимушено говорити англійською або іспанською у
+							дружній теплій атмосфері, не боячись помилок, запрошую Вас на наші групові або індивідуальні заняття.
+						</p>
+					</div>
+				</section>
+				<!-- Counter -->
+				<section class="section section--bg-2">
+					<!-- <div class="container">
+					<h2 class="section__title">Про мене у цифрах</h2>
+				</div> -->
+					<div class="counters">
+						<div class="counters__row">
+							<div class="counters__item counter">
+								<p class="counter__number"><span>5</span></p>
+								<p class="counter__title">років навчання у ПНПУ ім. Короленка</p>
+							</div>
+							<div class="counters__item counter">
+								<p class="counter__number"><span>3</span></p>
+								<p class="counter__title">місяці навчання в Іспанії у мовній школі з нейтівами</p>
+							</div>
+							<div class="counters__item counter">
+								<p class="counter__number"><span>6</span></p>
+								<p class="counter__title">місяців проживання в США</p>
+							</div>
+							<div class="counters__item counter">
+								<p class="counter__number"><span>14</span></p>
+								<p class="counter__title">років викладання у приватних мовних школах</p>
+							</div>
+							<div class="counters__item counter">
+								<p class="counter__number"><span>1000</span>+</p>
+								<p class="counter__title">задоволених учнів, які подолали мовний барьер</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Why me -->
+				<section class="section">
+					<div class="container">
+						<h2 class="section__title">Чому саме я?</h2>
+						<article class=""></article>
+					</div>
+				</section>
+				<!-- Cources -->
+				<section class="section">
+					<div class="container">
+						<h2 class="section__title">Курси</h2>
+						<article class=""></article>
+					</div>
+				</section>
+				<!-- Testimonials -->
+				<section class="section section--bg-2">
+					<div class="container-large">
+						<h2 class="section__title">Відгуки</h2>
+						<div class="swiper testimonials-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="testimonials-slider__slide">
+										<div class="testimonials-slider__text">
+											<p>
+												Починав навчання англійської мови з Веронікою Олександрівною з рівнем А2 і відразу долучився до групи upper intermediate. На початку
+												було складно адже рівень дуже відрізнявся, але правильний підхід викладача, приємна група допомогли швидко адаптуватись. На уроках
+												завжди панувала атмосфера як вдома, тому й навчання було швидким приємним і головне ефективним. За час заняття ми ділились своїми
+												новинами і обговорювали що нового, а потім впевнено покращували свої знання. Вероніка Олександрівна - чудовий викладач, адже поєдання
+												розуму, почуття гумору і вміння передавати знання та комунікувати з людьми це саме те, що кожен бажає бачити у свого викладача мови.
+												Саме завдяки її мій рівень значно виріс і зараз я без проблем можу комунікувати з носіями англійської мови і відчувати себе впевнено при
+												діалозі.
+											</p>
+										</div>
+										<div class="testimonials-slider__row">
+											<div class="testimonials-slider__image">
+												<img src="img/dest/testimonial-1.png" class="testimonials-slider__photo" />
+											</div>
+											<div class="testimonials-slider__person">
+												<div class="testimonials-slider__name">Юра</div>
+												<div class="testimonials-slider__position">студент</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonials-slider__slide">
+										<div class="testimonials-slider__text">
+											<p>
+												Я вивчала англійську мову, почала з рівня intermediate, досягла рівня advanced Перш за все уроки мені були корисні тим, що я
+												практикувала свою англійську, отримувала новий досвід. Також дізнавалася багато нового щодо граматики, слів та прийомів використання
+												мови в повсякденному житті від викладача. Найбільше мені подобається на заняттях те, що є багато вікторин, тестів та ігор для кращого
+												запам’ятовування, використання актуальної лексики. Вероніка Олександрівна подобається, як викладач, тим що використовує багато прийомів
+												та засобів навчання, уроки завжди цікаві, мають структуру. Та звичайно, педагог вражає своїм глибоким знанням англійської мови, це дає
+												мотивацію вчиться ще краще.
+											</p>
+										</div>
+										<div class="testimonials-slider__row">
+											<div class="testimonials-slider__image">
+												<img src="img/dest/testimonial-2.png" class="testimonials-slider__photo" />
+											</div>
+											<div class="testimonials-slider__person">
+												<div class="testimonials-slider__name">Богдана</div>
+												<div class="testimonials-slider__position">студентка</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonials-slider__slide">
+										<div class="testimonials-slider__text">
+											<p>
+												Хотілось подякувати Вероніці Олександрівні, за те що привила любов до вивчення мов та показала, що це не так складно або нудно. Мені
+												подобається те, що урок завжди живий та енергійний, а не нудне вивчення слів та виконання вправ.
+											</p>
+											<p>
+												Я почала вивчати англійську ще дитиною (приблизно в 6 років). Для мене вивчення мови поза школою, здавалось чимось нудним, але я дуже
+												помилялась. У нас була спеціальна програма, котра дозволяла концентрувати увагу, навіть для такої гіперактивної дитини як я ) Зараз я на
+												рівні Advanced і продовжую поглиблювати свої знання по сей день.
+											</p>
+											<p>
+												Після кожного уроку я виходила з розумінням, що я вивчила щось нове (слова, граматика). Понад усе мені подобається speaking. Ти не
+												тільки дискутуєш та дізнаєшся думку свого співрозмовника, а ще розвиваєшся. Розмовляючи ми використовуємо та засвоюємо нові слова та
+												граматику. Також ми часто вивчаємо додатковий матеріал для більшого поглиблення матеріалу уроку, що не може не радувати.
+											</p>
+										</div>
+										<div class="testimonials-slider__row">
+											<div class="testimonials-slider__image">
+												<img src="img/dest/testimonial-3.png" class="testimonials-slider__photo" />
+											</div>
+											<div class="testimonials-slider__person">
+												<div class="testimonials-slider__name">Поліна</div>
+												<div class="testimonials-slider__position">студентка</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonials-slider__slide">
+										<div class="testimonials-slider__text">
+											<p>
+												I started to visit the language school when I was 17, after finishing school. I began to think about improving my knowledge, especially
+												speaking.
+											</p>
+											<p>
+												Throughout 3 years I can certainly say that these lessons have impacted me greatly and I am sure they will help me in the near future.
+												In all 3 years of studying , I have had one English teacher, Veronica. She’s so intelligent and has an amazing ability to communicate
+												with students. Also she has an exciting life experience in an English speaking country and not only. She’s created such an interesting,
+												cozy atmosphere in our group. Every lesson she prepared for us different quizzes, games, and videos and it really encouraged me to learn
+												the language. Every year we learn new things as we progress from one level to another.
+											</p>
+										</div>
+										<div class="testimonials-slider__row">
+											<div class="testimonials-slider__image">
+												<img src="img/dest/testimonial-4.png" class="testimonials-slider__photo" />
+											</div>
+											<div class="testimonials-slider__person">
+												<div class="testimonials-slider__name">Анастасія</div>
+												<div class="testimonials-slider__position">студентка</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonials-slider__slide">
+										<div class="testimonials-slider__text">
+											<p>
+												Кілька років тому я вирішив покращити знання своєї англійської мови для поліпшення оцінок під кінець школи та майбутнього навчання за
+												кордоном.Все почалося з курсу upper intermediate,який пролетів для мене майже блискавично і я нарешті отримав довгоочікуваний
+												сертифікат,що підтверджував моє здобуття рівня В2. Я вирішив на цьому не зупинятися,тож продовжив розвивати свої здібності далі.На даний
+												момент я маю рівень advanced і це грає значну роль в моєму житті.
+											</p>
+											<p>
+												Сам процес навчання мені подобався.На уроках було цікаво слухати вчителя і це допомагало мені концентруватися на навчанні.Також для
+												кращого засвоєння матеріалу та розумової перерви часто влаштовувались різні ігри та змагання між студентами. Взагалі, увесь процес
+												навчання був цікавий і креативний.
+											</p>
+										</div>
+										<div class="testimonials-slider__row">
+											<div class="testimonials-slider__image">
+												<!-- <img src="img/dest/testimonial-1.png" class="testimonials-slider__photo" /> -->
+											</div>
+											<div class="testimonials-slider__person">
+												<div class="testimonials-slider__name">Іван</div>
+												<div class="testimonials-slider__position">студент</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials-slider__dots"></div>
+						</div>
+					</div>
+				</section>
+				<!-- Feedback -->
+				<section class="section">
+					<div class="container">
+						<div class="feedback">
+							<form>
+								<div class="row">
+									<div class="col">
+										<div class="feedback__item">
+											<label for="name"> Iм'я </label>
+											<input type="text" name="" id="name" class="feedback__input" />
+										</div>
+									</div>
+									<div class="col">
+										<div class="feedback__item">
+											<label for="name"> Номер телефону </label>
+											<input type="tel" name="" id="phone" class="feedback__input" />
+										</div>
+									</div>
+								</div>
 
-	<script src="js/app.min.js">
-	</script>
-
-</body>
-
+								<div class="text-center">
+									<button class="button button_wide">Відправити</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer></footer>
+		</div>
+		<div class="overlay"></div>
+		<div class="aside-menu">
+			<div class="aside-menu__header">
+				<a class="logo" href="/">
+					<img src="img/dest/logo.png" alt="Logo" class="logo__img" />
+				</a>
+				<a class="burger-icon">
+					<span class="line line__top"></span>
+					<span class="line line__bottom"></span>
+				</a>
+			</div>
+			<div class="aside-menu__body"></div>
+		</div>
+		<script src="js/jq.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<!-- <script src="js/swiper-bundle.min.js"></script> -->
+		<script src="js/app.js"></script>
+	</body>
 </html>

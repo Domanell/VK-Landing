@@ -52,11 +52,12 @@ function scripts() {
 function styles() {
 	return (
 		src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
-			.pipe(sourcemaps.init())
-			.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
-			// .pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
+			// .pipe(sourcemaps.init())
+			// .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+			.pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+			.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
 			.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
-			.pipe(sourcemaps.write('.'))
+			// .pipe(sourcemaps.write('.'))
 			.pipe(cleancss({ level: { 1: { specialComments: 0 } } /* , format: 'beautify' */ })) // Минифицируем стили
 			.pipe(dest('app/css/')) // Выгрузим результат в папку "app/css/"
 			.pipe(browserSync.stream())
@@ -92,7 +93,7 @@ function buildcopy() {
 			// Выбираем нужные файлы
 			'app/css/**/*.min.css',
 			'app/js/**/*.min.js',
-			'app/images/dest/**/*',
+			'app/img/dest/**/*',
 			'app/**/*.html',
 		],
 		{ base: 'app' }
