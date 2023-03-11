@@ -238,16 +238,28 @@ h3 {
 	h1 {
 		padding-top: 15px;
 		font-size: 38px;
+		@include mq(991.99px) {
+			font-size: 28px;
+		}
 	}
 	&__text {
 		font-size: 22px;
 		color: var(--heading-color);
+		@include mq(991.99px) {
+			margin-top: 2rem;
+			text-align: center;
+		}
 	}
 	&__img {
 		border-radius: 50%;
 	}
 	.button {
 		margin-top: 35px;
+		@include mq(991.99px) {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 
@@ -286,6 +298,12 @@ h3 {
 		flex: 0 0 20%;
 		max-width: 20%;
 		text-align: center;
+		img{
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 1rem;
+			max-height: 80px;
+		}
 		span {
 			color: var(--primary-color);
 			font-weight: 500;
@@ -297,6 +315,7 @@ h3 {
 		@include mq(576px) {
 			flex: 0 0 100%;
 			max-width: 100%;
+			padding-bottom: 45px;
 		}
 	}
 	h3 {
@@ -308,6 +327,12 @@ h3 {
 .section__video {
 	.section__title {
 		text-align: left;
+	}
+	.about-me{
+		margin-top: 4rem;
+		p{
+			margin-bottom: 1rem;
+		}
 	}
 }
 .video {
@@ -360,10 +385,14 @@ h3 {
 			display: block;
 		}
 	}
+	@include mq(991.99px) {
+		padding-right: 0;
+		margin-top: 4rem;
+	}
 }
 
 .counters {
-	background: #fff;
+	// background: #fff;
 	&__row {
 		display: flex;
 		justify-content: center;
@@ -381,23 +410,36 @@ h3 {
 			padding-right: 10px;
 		}
 		@include mq(991.99px) {
-			flex: 0 0 33%;
-			max-width: 33%;
+			flex: 0 0 20%;
+			max-width: 20%;
+			&:first-child{
+				border-left: none;
+			}
+			&:last-child{
+				border-right: none;
+			}
 		}
-		@include mq(576px) {
+		@include mq(767.99px) {
 			flex: 0 0 100%;
 			max-width: 100%;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 	}
 }
 
 .counter {
-	background: #fff;
-	border-left: 2px solid var(--bg-2);
-	border-right: 2px solid var(--bg-2);
+	// background: #fff;
+	// border-left: 2px solid var(--bg-2);
+	// border-right: 2px solid var(--bg-2);
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
 	text-align: center;
 	& + &:not(:last-child) {
 		border-width: 1px;
+	}
+	@include mq(767.99px) {
+		border: none;
 	}
 	&__number {
 		padding-bottom: 25px;
@@ -427,6 +469,10 @@ h3 {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		@include mq(991.99px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 	&__row {
 		padding-top: 30px;
@@ -478,6 +524,9 @@ h3 {
 	}
 	.swiper-wrapper {
 		align-items: center;
+		@include mq(991.99px) {
+			align-items: flex-start;
+		}
 	}
 }
 
@@ -506,4 +555,9 @@ h3 {
 			border-color: var(--accent-color);
 		}
 	}
+}
+
+footer{
+	background: var(--text-color-light);
+	padding: 60px 0;
 }

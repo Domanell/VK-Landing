@@ -84,11 +84,16 @@ $(document).ready(function () {
 			el: '.testimonials-slider__dots',
 			clickable: true,
 		},
-		// breakpoints: {
-		// 	576: {},
-		// 	767: {
-		// 		// slidesPerView: 1,
-		// 	},
-		// },
+		breakpoints: {
+			300: {
+				spaceBetween: 30,
+				slidesPerView: 1.05,
+			},
+			992: {
+				slidesPerView: 1.6,
+				spaceBetween: 60,
+
+			},
+		},
 	});
 });
